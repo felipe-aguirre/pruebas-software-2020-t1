@@ -19,8 +19,6 @@ for entrada in cases:
         log = str()
         for i in range(2):
             if output[i] == 0:
-                print(i)
-                print(entrada[i])
                 log+= "Entrada {} no permitida ".format(entrada[i])
         logger.debug(log)
     else:

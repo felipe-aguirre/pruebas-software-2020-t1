@@ -5,6 +5,9 @@ def compareString(a,b):
 	if type(b) is str:
 		valid[1] = 1
 	if valid == [1,1]:
-	    return min(a,b)
+	    if len(a) > len(b):
+	    	return a
+	    else:
+	    	return b
 	else:
 		return valid		
